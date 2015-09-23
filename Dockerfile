@@ -23,6 +23,7 @@ ADD . /usr/src/opencv
 # Build source code
 RUN mkdir /usr/src/opencv/release
 WORKDIR /usr/src/opencv/release
+
 RUN cmake -D CMAKE_BUILD_TYPE=RELEASE -D CMAKE_INSTALL_PREFIX=/usr/local ..
 RUN make
 RUN make install
