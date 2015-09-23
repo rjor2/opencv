@@ -16,7 +16,8 @@ WORKDIR /usr/src
 ADD . /usr/src
 
 # Pull from main opencv repo in case we're behind.
-RUN git pull https://github.com/Itseez/opencv
+# Needs git config user.name and user.password set?? so leaving out for now
+# RUN git pull https://github.com/Itseez/opencv
 
 # Build source code
 RUN mkdir release
