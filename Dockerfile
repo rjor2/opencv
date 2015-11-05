@@ -28,3 +28,8 @@ RUN cmake -D CMAKE_BUILD_TYPE=RELEASE -D CMAKE_INSTALL_PREFIX=/usr/local ..
 RUN make
 RUN make install
 
+# pip
+RUN apt-get -y install python-pip git-core
+RUN pip install pika
+
+
